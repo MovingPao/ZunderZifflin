@@ -1,0 +1,321 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Drop Down */
+.prodrop {
+    display: none;
+    color: black;
+    /* background-color: grey; */
+    padding: 20px 20px;
+    border-radius: 15px;
+}
+
+.prodrop ul {
+    display: none;
+    transition: 0.5s ease;
+}
+
+.prodrop:hover ul {
+    /* padding-left: 100px; */
+    cursor: pointer;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    background: #40c9a2;
+    color: white;
+    text-align: center;
+    align-items: center;
+    border-radius: 0 0 5px 5px;
+    margin: 0;
+    margin-left:1px;
+    margin-right:0.75em;
+    padding:10px;
+    padding-left: 11px;
+    transition: 0.5s ease;
+}
+/* End of Drop Down */
+
+
+/* Header */
+header {
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(asset/wallpaper3.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+
+header h1{
+    margin-top: 75px;
+    padding-bottom: 150px;
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 150px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: white;
+    display: block;
+    margin: auto;
+    transition: 0.3s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+    transition: 0.3s ease;
+}
+
+nav .fa {
+    display: none;
+}
+/* End of Header */
+
+
+/* Responsive Header */
+@media(max-width: 670px) {
+    /* header h1{
+        margin-bottom: 50[];
+    } */
+    .text-box h1 {
+        font-size: 20px;
+    }
+    .nav-links ul li {
+        display: block;
+    }
+    .nav-links {
+        position: absolute;
+        background: #40c9a2;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2000;
+        transition: 0.5s;
+    }
+    nav .fa {
+        display: block;
+        color: white;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+        z-index: 1900;
+    }
+    .nav-links ul {
+        padding: 30px;
+    }
+
+    .prodrop ul li{
+        display: none;
+    }
+}
+/* End of Responsive Header */
+
+
+/* Footer */
+footer{
+    width: 100%;
+    text-align: center;
+    padding:30px 0;
+    background-color: #262626;
+    color: white;
+}
+
+footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.icons .fa{
+    color: #40c9a2;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+
+footer p{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.icons a{
+    text-decoration: none;
+}
+/* End of Footer */
+
+/* Body */
+body{
+    background:#f1f1f1;
+}
+section{
+    background: #f1f1f1;
+}
+.title{
+    font-size: 35px;
+    margin-bottom: 105px;
+}
+
+.registerContainer{
+    display: flex;
+    margin: 100px auto;
+    padding-top: 175px;
+    flex-direction: column;
+    width: 625px;
+    height: 1000px;
+    align-items: center;
+    background: white;
+    /* border-style: solid; */
+    /* border-color: #40c9a2; */
+    box-shadow: 0 50px 50px rgb(0 0 0 / 25%);
+    border-radius: 20px;
+}
+
+.registerContent{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.registerContent .btn{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px 5px;
+}
+
+.registerContent .btn input{
+    width: 100px;
+}
+
+.registerContent .btn #submit{
+    width: 100px;
+    background-color: #6b83ac;
+    border-radius: 5px;
+    border-color: #262626;
+}
+
+.registerContent .btn #reset{
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+    border-color: #262626;
+}
+
+#nameTxt, #emailTxt, #addressTxt{
+    width: 500px;
+    font-size: 25px;
+    padding: 5px;
+    margin: 10px 0;
+}
+
+.genderContainer{
+    margin: 10px 0;
+}
+
+.genderBox{
+    display: flex;
+    flex-direction: row;
+}
+
+.genderBox .maleBox, .femaleBox{
+    margin-right: 10px;
+    font-size: 25px;
+}
+
+#agreeChk, .btn, #cityList{
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+#errorMsg{
+    text-align: center;
+}
+
+/* Lokasi Button */
+/* .btn #submit ,#reset{
+    margin-top: 300px;
+} */
+
+
+@media screen and (max-width:1000px){
+    .registerContainer{
+        width: 600px;
+    }
+}
+
+@media screen and (max-width:670px){
+
+    .registerContainer{
+        width:  300px;
+        justify-content: center;
+        box-shadow: none;
+    }
+
+    /* .registerContent{
+        display: flex;
+        width: 50px;
+    }*/
+
+    #nameTxt, #emailTxt, #addressTxt{
+        width: 150px;
+        font-size: 10px;
+    }
+
+    /*.registerContent .btn{
+        width: 50px;
+        height: 25px;
+        margin: auto;
+    } */
+
+    .genderBox .maleBox, .femaleBox {
+        margin-right: 10px;
+        font-size: 10px;
+    }
+
+    #form{
+        width: 250px;
+        text-align: center;
+    }
+
+    #nameTxt, #emailTxt, #addressTxt{
+        width: 200px;
+    }
+}
+
+
+

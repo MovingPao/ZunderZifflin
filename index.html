@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZZ Home</title>
+    <link rel="stylesheet" href="HomePageStyle.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="undefined" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="HeadFoot.html"><img src="asset/logoPNG.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="prodrop"><a href="ProductPage.html">Products
+                        <ul>
+                            <li>Printer</li>
+                            <li>Stationery</li>
+                            <li>Peripherals</li>
+                        </ul>
+                        </a>
+                    </li>
+                    <li><a href="AboutPage.html">About Us</a></li>
+                    <li><a href="RegisterPage.html">Registration</a></li>
+                    <li><a href="ContactPage.html">Contacts</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>
+                Zunder Zifflin
+            </h1>
+            <p>Hi, welcome to Zunder Zifflin homepage<br>
+                Here you could see our top 3 product categories, our founders who built Zunder Zifflin, and lastly why you should pick us.
+            </p>
+            <a href="ProductPage.html" class="hero-btn">Want to See Our Products?</a>
+        </div>
+    </header>
+    
+
+<!-- Slider -->
+    <div class="background">
+    <button id="btnLeft">
+      <span class="fa fa-caret-left"></span>
+    </button>
+    <div class="slider">
+      <div class="images">
+        <img
+          src="asset/slider1.png"
+          alt="slider1"
+          class="slider-image"
+        />
+        <img
+          src="asset/slider2.png"
+          alt="slider2"
+          class="slider-image"
+        />
+        <img
+          src="asset/slider3.png"
+          alt="slider3"
+          class="slider-image"
+        />
+        <img
+          src="asset/slider4.png"
+          alt="slider4"
+          class="slider-image"
+        />
+      </div>
+    </div>
+    <button id="btnRight">
+      <span class="fa fa-caret-right"></span>
+    </button>
+    </div>
+      <!-- End of Slider -->
+      
+      <!-- Contents -->
+      <!-- Our Products Brief -->
+      <div class="our-products">
+          <h1>Our Products</h1>
+          <p>These are the top 3 best product categories on Zunder Zifflin<br>
+        and<br>a reminder, our products is environmentally safe.</p>
+          
+          <div class="row">
+              <!-- Col 1 -->
+              <!-- Course-col -->
+              <div class="pro-col">
+                  <h3>Multifunctional Printer</h3>
+                  <img src="asset/Printer1.png" alt="">
+                  <!-- <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio quibusdam rerum id quo voluptates deserunt atque velit! Ipsam dolorem minima itaque totam? Provident atque quasi dolore! Corporis veniam autem eum!</p> -->
+                </div>
+                <!-- End of Col 1 -->
+                
+                <!-- Col 2 -->
+                <div class="pro-col">
+                    <h3>Office Peripherals</h3>
+                    <img src="asset/Table1.jpg" alt="">
+                    <!-- <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio quibusdam rerum id quo voluptates deserunt atque velit! Ipsam dolorem minima itaque totam? Provident atque quasi dolore! Corporis veniam autem eum!</p> -->
+                </div>
+                <!-- End of Col 2 -->
+                
+                <!-- Col 3 -->
+                <div class="pro-col">
+                    <h3>Top Quality Papers</h3>
+                    <img src="asset/A4_Paper.png" alt="">
+                </div>
+                <!-- End of Col 3 -->
+            </div>
+        </div>
+        <!-- End of Our Products Brief -->
+
+        <!-- Our People -->
+        <div class="our-people">
+            <h1>Our People</h1>
+            <p>These are Zunder Zifflin founders, they make this company to serve you the best products. </p>
+
+            <div class="row">
+                <!-- People 1 -->
+                <div class="people-col">
+                    <img src="asset/girl1.jpg">
+                    <div class="layer">
+                        <h3>Taeyeon</h3>
+                    </div>
+                </div>
+                <!-- End of People 1 -->
+
+                <!-- People 2 -->
+                <div class="people-col">
+                    <img src="asset/girl2.jpg">
+                    <div class="layer">
+                        <h3>Sooyoung</h3>
+                    </div>
+                </div>
+                <!-- End of People 2 -->
+
+                <!-- People 3 -->
+                <div class="people-col">
+                    <img src="asset/girl3.jpg">
+                    <div class="layer">
+                        <h3>Sunny</h3>
+                    </div>
+                </div>
+                <!-- End of People 3 -->
+            </div>
+        </div>
+        <!-- End of Our People -->
+
+
+        <!-- Why Zunder Zifflin? -->
+        <div class="why">
+            <h1>Why Should You Pick Us?</h1>
+            <p>This is are our advantages against our competitors that is currently on the same field with us</p>
+            
+            <div class="row">
+                <!-- Why 1 -->
+                <div class="why-col">
+                    <img src="asset/why2.jpg">
+                    <h3>We are Environmentally Safe</h3>
+                    <p>Our products are eco-friendly products, which mean
+                        our products do not harm the environment whether in their production, use, or disposal.
+                        We also plant trees per 1 product that we sold.
+                    </p>
+                </div>
+                <!-- End of Why 1 -->
+
+                <!-- Why 2 -->
+                <div class="why-col">
+                    <img src="asset/wallpaper5.jpeg">
+                    <h3>Made from the Best</h3>
+                    <p>Our products source material are handpicked or using a recycle source.
+                        To maintain our quality we use a thoroughly method to ensure we achieve the highest quality to be given
+                        to the customer.
+                    </p>
+                </div>
+                <!-- End of Why 2 -->
+
+                <!-- Why 3 -->
+                <div class="why-col">
+                    <img src="asset/wallpaper6.jpeg">
+                    <h3>We are Cheap</h3>
+                    <p>We will always give a discount to every product at the end of the week.
+                        Discounts will apply to each product and the discount 
+                        can be up to 90%. The discounted item is not just one 
+                        item but consists of hundreds of items</p>
+                </div>
+                <!-- End of Why 3 -->
+            </div>
+        </div>
+        <!-- End of Why Zunder Zifflin -->
+
+
+        <!-- Little CTUS -->
+        <div class="ctus">
+            <h1>
+                Do you have any question or feedback to us?<br>
+                or do you want to know more?
+            </h1>
+            <a href="ContactPage.html" class="hero-btn">Contact Us</a>
+        </div>
+        <!-- End of Little CTUS -->
+
+
+        <!-- Footer -->
+        <footer>
+            <h4>
+                Thank You for Visiting Our Website
+            </h4>
+            <p>
+                Help to change life on earth to be more environmentally safe for everyone.<br><br>
+                Please Visit our Social Media's 
+              </p>
+            <div class="icons">
+                <a href="https://facebook.com">
+                    <i class="fa fa-facebook"></i>
+                </a>
+                <a href="https://twitter.com">
+                    <i class="fa fa-twitter"></i>
+                </a>
+                <a href="https://instagram.com">
+                    <i class="fa fa-instagram"></i>
+                </a>
+                <a href="https://linkedin.com">
+                    <i class="fa fa-linkedin"></i>
+                </a>
+            </div>
+            <p>&copy; 2021 ZZ, Inc.</p>
+        </footer>
+
+        <script src="jquery-3.6.0.min.js"></script>
+        <script src="slider.js"></script>
+        <script src="HF.js"></script>
+    </body>
+    
+    </html>

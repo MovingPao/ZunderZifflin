@@ -1,0 +1,492 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Drop Down */
+.prodrop {
+    display: none;
+    color: black;
+    /* background-color: grey; */
+    padding: 20px 20px;
+    border-radius: 15px;
+}
+
+.prodrop ul {
+    display: none;
+    transition: 0.5s ease;
+}
+
+.prodrop:hover ul {
+    /* padding-left: 100px; */
+    cursor: pointer;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    background: #40c9a2;
+    color: white;
+    text-align: center;
+    align-items: center;
+    border-radius: 0 0 5px 5px;
+    margin: 0;
+    margin-left:1px;
+    margin-right:0.75em;
+    padding:10px;
+    padding-left: 11px;
+    transition: 0.5s ease;
+}
+/* End of Drop Down */
+
+
+/* Header */
+header {
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(asset/wallpaper3.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+
+header h1{
+    margin-top: 75px;
+    padding-bottom: 150px;
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 150px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: white;
+    display: block;
+    margin: auto;
+    transition: 0.3s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+    transition: 0.3s ease;
+}
+
+nav .fa {
+    display: none;
+}
+/* End of Header */
+
+
+/* Responsive Header */
+@media(max-width: 670px) {
+    /* header h1{
+        margin-bottom: 50[];
+    } */
+    .text-box h1 {
+        font-size: 20px;
+    }
+    .nav-links ul li {
+        display: block;
+    }
+    .nav-links {
+        position: absolute;
+        background: #40c9a2;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2000;
+        transition: 0.5s;
+    }
+    nav .fa {
+        display: block;
+        color: white;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+        z-index: 1900;
+    }
+    .nav-links ul {
+        padding: 30px;
+    }
+
+    .prodrop ul li{
+        display: none;
+    }
+}
+/* End of Responsive Header */
+
+
+/* Footer */
+footer{
+    width: 100%;
+    text-align: center;
+    padding:30px 0;
+    background-color: #262626;
+    color: white;
+}
+
+footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.icons .fa{
+    color: #40c9a2;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+
+footer p{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.icons a{
+    text-decoration: none;
+}
+/* End of Footer */
+
+/* Contents */
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f1f1f1;
+}
+
+section::before{
+    content: '';
+    position:absolute;
+    margin-top: 80px;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 0;
+    background: #f1f1f1;
+}
+
+.container{
+    position: relative;
+    min-width: 1100px;
+    min-height: 550px;
+    display: flex;
+    z-index: 1000;
+    /* background: white; */
+}
+
+.container .Info{
+    position: absolute;
+    top: 40px;
+    width: 350px;
+    height: calc(100% - 80px);
+    background: #40c9a2;
+    z-index: 1;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.15);
+    border-radius: 25px;
+}
+
+.container .Info h2{
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.container .Info ul.c-info{
+    position: relative;
+    margin: 20px 0;
+}
+
+.container .Info ul.c-info li{
+    position: relative;
+    list-style: none;
+    display: flex;
+    margin: 20px 0;
+    cursor: pointer;
+    align-items: flex-start;
+}
+
+.container .Info ul.c-info li span:nth-child(1){
+    width: 30px;
+    min-width: 30px;
+}
+
+.container .Info ul.c-info li span:nth-child(1) img{
+    max-width: 100%;
+    filter: invert(1);
+}
+
+.container .Info ul.c-info li span:nth-child(2){
+    color: white;
+    margin-left: 10px;
+    font-weight: 300;
+}
+
+.container .Info ul.sosmed{
+    position: relative;
+    display: flex;
+}
+
+.container .Info ul.sosmed li{
+    list-style: none;
+    margin-right: 15px;
+}
+
+.container .Info ul.sosmed li a{
+    text-decoration: none;
+}
+
+.container .Info ul.sosmed li a img{
+    filter: invert(1);
+}
+
+/* Content Form */
+.container .Form{
+    position: absolute;
+    padding: 70px 50px;
+    padding-left: 250px;
+    margin-left: 150px;
+    width: calc(100% - 150px);
+    height: 100%;
+    background: #fff;
+    box-shadow: 0 50px 50px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+}
+
+.container .Form h2{
+    color: #262626;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.container .Form .tempatForm{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+
+.container .Form .tempatForm .inputan{
+    position: relative;
+    margin-bottom: 35px;
+}
+
+.container .Form .tempatForm .inputan.w50{
+    width: 47%;
+}
+
+.container .Form .tempatForm .inputan.w100{
+    width: 100%;
+}
+
+.container .Form .tempatForm .inputan input,
+.container .Form .tempatForm .inputan textarea{
+    width: 100%;
+    resize: none;
+    padding: 5px 0;
+    font-size: 18px;
+    font-weight: 300;
+    color: #333;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #262626;
+}
+
+.container .Form .tempatForm .inputan textarea{
+    height: 120px;
+}
+
+.container .Form .tempatForm .inputan span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    pointer-events: none;
+    font-size:18px;
+    font-weight: 300;
+    transform: 0.3s;
+    transition: 0.3s ease;
+}
+
+.container .Form .tempatForm .inputan input:focus ~ span,
+.container .Form .tempatForm .inputan input:valid ~  span,
+.container .Form .tempatForm .inputan textarea:focus ~ span,
+.container .Form .tempatForm .inputan textarea:valid ~ span{
+    transform: translateY(-20px);
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #40c9a2;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.container .Form .tempatForm .inputan input[type="submit"]{
+    position: relative;
+    cursor: pointer;
+    background: #40c9a2;
+    color: white;
+    border: none;
+    max-width: 150px;
+    padding: 12px;
+    border-radius: 25px;
+    transition: 0.3s ease;
+}
+
+.container .Form .tempatForm .inputan input[type="submit"]:hover{
+    transition: 0.3s ease;
+    background: #ebe8e8;
+    color: #262626;
+
+}
+
+/* Responsive */
+@media (max-width:1200px){
+    .container{
+        width: 90%;
+        min-width: auto;
+        margin: 20px;
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+        border-radius: 25px;
+    }
+
+    .container .Info{
+        top: 0;
+        height: 550px;
+        position: relative;
+        box-shadow: none;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+
+    .container .Form{
+        position: relative;
+        width: calc(100% - 350px);
+        padding-left: 0;
+        margin-left: 0;
+        padding: 40px;
+        height: 550px;
+        box-shadow: none;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+}
+
+@media (max-width:991px){
+    section{
+        background: #f1f1f1;
+    }
+
+    section::before{
+        display: none;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .container .Form{
+        width: 100%;
+        height: auto;
+        border-top-left-radius: 25px;
+        border-bottom-right-radius: 0px;
+    }
+    
+    .container .Info{
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        border-top-left-radius: 0px;
+        border-bottom-right-radius: 25px;
+    }
+
+    .container .Info ul.sosmed{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width:600px){
+    .container .Form{
+        padding: 25px;
+        border-top-left-radius: 25px;
+        border-bottom-right-radius: 0px;
+    }
+
+    .container .Info{
+        padding: 25px;
+        flex-direction:column;
+        align-items: flex-start;
+        border-top-left-radius: 0px;
+        border-bottom-right-radius: 25px;
+    }
+
+    .container .Info ul.sosmed{
+        margin-top: 40px;
+    }
+
+    .container .Form .tempatForm .inputan.w50{
+        width: 100%;
+    }
+
+    header{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .navbar{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .navbar li{
+        text-align: center;
+        align-items: center;
+        margin:auto
+    }
+}
+
+
+
+

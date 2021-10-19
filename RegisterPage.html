@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZZ Registration</title>
+    <link rel="stylesheet" href="RegisterStyle.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="undefined" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <!-- Header -->
+    <header>
+      <nav>
+          <a href="HeadFoot.html"><img src="asset/logoPNG.png" alt=""></a>
+          <div class="nav-links" id="navLinks">
+              <i class="fa fa-times" onclick="hideMenu()"></i>
+              <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li class="prodrop"><a href="ProductPage.html">Products
+                      <ul>
+                          <li>Printer</li>
+                          <li>Stationery</li>
+                          <li>Peripherals</li>
+                      </ul>
+                    </a>
+                  </li>
+                  <li><a href="AboutPage.html">About Us</a></li>
+                  <li><a href="RegisterPage.html">Registration</a></li>
+                  <li><a href="ContactPage.html">Contacts</a></li>
+              </ul>
+          </div>
+          <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>Register to Us</h1>
+    </header>
+    <script src="HF.js"></script>
+    <!-- End of Header -->
+
+    <!-- Register -->
+    <section>
+        <div class="registerContainer">
+            <div class="title">Register</div>
+    
+            <form id="form" method="dialog" onsubmit="return validate()">
+                <div class="registerContent">
+    
+    
+                    <div>
+                        <!-- <label for="name">Name</label> -->
+                        <input type="text" name="name" id="nameTxt" placeholder="Name">
+                    </div>
+    
+                    <div>
+                        <!-- <label for="email">Email</label> -->
+                        <input type="email" name="email" id="emailTxt" placeholder="Email">
+                    </div>
+    
+                    <div class="genderContainer">
+                        <label for="gender">Gender</label>
+                        <br>
+                        <div class="genderBox">
+                            <div class="maleBox">
+                                <input type="radio" name="genderBtn" id="male" value="Male">
+                                <label for="male">Male</label>
+                            </div>
+    
+                            <div class="femaleBox">
+                                <input type="radio" name="genderBtn" id="female" value="Female">
+                                <label for="female">Female</label>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div>
+                        <textarea name="address" id="addressTxt" cols="31" rows="5" placeholder="Address"></textarea>
+                    </div>
+    
+                    <div>
+                        <select id="cityList">
+                            <option selected hidden>Select City</option>
+                            <option value="Jakarta">Jakarta</option>
+                            <option value="Tangerang">Tangerang</option>
+                            <option value="Bandung">Bandung</option>
+                            <option value="Bogor">Bogor</option>
+                            <option value="Others">Others</option>
+                        </select>
+                    </div>
+    
+                    <div>
+                        <input type="checkbox" name="agree" id="agreeChk">
+                        <label for="agreeChk">I agree with the terms and conditions</label>
+                    </div>
+    
+                    <div class="btn">
+                        <input id="submit" type="submit" value="Submit">
+                        <input id="reset" type="reset" value="Reset">
+                    </div>
+                </div>
+            </form>
+            <script type="text/javascript" src="RegiScript.js"></script>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <h4>
+            Thank You for Visiting Our Website
+        </h4>
+        <p>
+          Help to change life on earth to be more environmentally safe for everyone.<br><br>
+          Please Visit our Social Media's 
+        </p>
+        <div class="icons">
+            <a href="https://facebook.com">
+                <i class="fa fa-facebook"></i>
+            </a>
+            <a href="https://twitter.com">
+                <i class="fa fa-twitter"></i>
+            </a>
+            <a href="https://instagram.com">
+                <i class="fa fa-instagram"></i>
+            </a>
+            <a href="https://linkedin.com">
+                <i class="fa fa-linkedin"></i>
+            </a>
+        </div>
+        <p>&copy; 2021 ZZ, Inc.</p>
+    </footer>
+    <!-- End of Footer -->
+
+</body>
+</html>
